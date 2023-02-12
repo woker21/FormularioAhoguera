@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>formulario con fuego</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="caja-enviado.css">
+</head>
+<body>  
+  
+
+<!--container de animacion de flama-->
+
+<div class="cf-container">
+  <div class="cf-flame-container"  id="fireNodes1">
+    <div class = "cf-flame"></div>
+    <div class = "cf-flame"></div> 
+    <div class = "cf-flame"></div>
+    <div class = "cf-flame"></div> 
+    <div class = "cf-flame"></div>
+    <div class = "cf-flame"></div>
+    <div class = "cf-flame"></div>
+  </div>
+  <div class="cf-flame-container" id="fireNodes2">
+    <div class = "cf-flame"></div>
+    <div class = "cf-flame"></div>
+    <div class = "cf-flame"></div>
+    <div class = "cf-flame"></div>
+    <div class = "cf-flame"></div>
+    <div class = "cf-flame"></div>
+    <div class = "cf-flame"></div>
+  </div>
+  <div class="cf-flame-container" id="base-fire">
+    <div class = "cf-flame"></div>
+    <div class = "cf-flame"></div>
+    <div class = "cf-flame"></div>
+  </div>
+  <div class= "cf-log-container">
+    <div class="cf-log"></div>
+    <div class="cf-log"></div>
+  <div>
+</div>
+</div>
+</div>
+
+<!--fin de container de flama-->
+
+
+
+
+<!--Inicio de seccion de registro-->
+
+<div class="login-box" >
+  <h2>Registrate</h2>
+
+  <form name="registro" id="registroForm">
+
+    <div class="user-box">
+      <input type="text" name="" id="nombre" required="">
+      <label>Nombre</label>
+    </div>
+
+    <div class="user-box">
+      <input type="email" placeholder="Correo Electronico" required="" id="correoElectronico" >
+      <label>Correo Electronico</label>
+    </div>
+
+    <div class="user-box">
+      <input type="password" required="" id="contrasena" name="" >
+      <label>Contraseña</label>
+    </div>
+
+    <div class="user-box">
+      <input type="date" required="" id="fechaNacimiento">
+      <label>fecha de nacimiento</label>
+    </div>
+
+    <div class="user-box">
+      <select name="" id="genero">
+        <option value=" "></option>
+        <option value="Hombre">Hombre</option>
+        <option id="option" value="Mujer">Mujer</option>
+        <option value="Locura">Lo que se atraviese</option>
+      </select>
+      <label>Genero</label>
+    </div>
+
+    <a href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <input type="submit" id="enviarFormulario" value="Enviar">
+    </a>
+
+  </form>
+
+
+
+  <div id="mensaje-enviado">
+
+    <h1>Enviado con Exito</h1>
+    
+  </div>
+
+
+
+
+
+
+  <div id="iniciar">
+    <h4>
+      <a href="seccion.html">Iniciar Sesion</a>
+    </h4>
+  </div>
+</div>
+
+<!--Fin de registro -->
+
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js'></script><script  src="./script.js"></script>
+<script src="script.js"></script>
+<script src="verificacion.js"></script>
+</body>
+</html>

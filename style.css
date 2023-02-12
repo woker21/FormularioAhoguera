@@ -1,0 +1,398 @@
+*{
+  text-decoration: none;
+  text-transform: none;
+  color: #fff;
+}
+
+
+body {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+}
+
+.login-box {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+}
+
+.login-box {
+  position: absolute;
+  top: 22em;
+  right: 0em;
+  width: 480px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 10px 30px;
+  padding: 0;
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box select{
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+.login-box .user-box select:focus ~ label,
+.login-box .user-box select:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #f43f03;
+  font-size: 12px;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #f43f03;
+  font-size: 12px;
+}
+
+.login-box form a{
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box form a input{
+  background-color: transparent;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border: none;
+}
+
+.login-box a:hover {
+  background: #ffdc01;
+  color: #000000;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #d73e0f,
+              0 0 25px #d73e0f, 
+              0 0 50px #d73e0f, 
+              0 0 100px #d73e0f;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #f43f03);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #f43f03);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #f43f03);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #f43f03);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+
+/* Iniciar seccion */
+
+#iniciar{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+#iniciar h4 a{
+  padding: 8px 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-bottom: 1px solid #d73e0f;
+}
+
+
+
+/* flama */
+
+
+body {
+  background-color: #372113;
+  width: 100vw;
+  height: 100vh;
+}
+
+.cf-container {
+  box-sizing: content-box;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: 50%;
+  left: 25em;
+  transform: translate(-50%, -50%);
+}
+.cf-container .cf-flame-container {
+  width: 100px;
+  height: 100px;
+  bottom: 0px;
+  position: absolute;
+}
+.cf-container .cf-log-container {
+  width: 60%;
+  height: 100px;
+  position: absolute;
+  bottom: 0px;
+  left: 50px;
+}
+.cf-container .cf-flame-container#base-fire .cf-flame:nth-child(1) {
+  background: #c63509;
+  opacity: 0.95;
+}
+.cf-container .cf-flame-container#base-fire .cf-flame:nth-child(2) {
+  background: #cd4015;
+  width: 100px;
+  height: 100px;
+  opacity: 0.85;
+  left: 75px;
+}
+.cf-container .cf-flame-container#base-fire .cf-flame:nth-child(3) {
+  background: #d73e0f;
+  width: 60px;
+  height: 60px;
+  opacity: 0.85;
+  left: 130px;
+}
+.cf-container .cf-flame-container:nth-child(2) {
+  width: 150px;
+  height: 150px;
+  bottom: 0px;
+  position: absolute;
+}
+.cf-container .cf-flame-container:nth-child(2) .cf-flame {
+  width: 75px;
+  height: 75px;
+  left: 75px;
+}
+
+.cf-log {
+  background: #723830;
+  width: 20px;
+  height: 30px;
+  transform-origin: center;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 0.5em;
+  box-shadow: 0 3px 10px #372113;
+  width: 100%;
+}
+.cf-log:nth-child(1) {
+  transform: rotate(15deg);
+}
+.cf-log:nth-child(2) {
+  transform: rotate(-15deg);
+}
+.cf-flame:nth-child(1) {
+  background: #f5ed8f;
+}
+.cf-flame:nth-child(2) {
+  background: #fde239;
+}
+.cf-flame:nth-child(3) {
+  background: #ffdc01;
+}
+.cf-flame:nth-child(4) {
+  background: #fdac01;
+}
+.cf-flame:nth-child(5) {
+  background: #d73e0f;
+}
+.cf-flame:nth-child(6) {
+  background: #cd4015;
+}
+.cf-flame:nth-child(7) {
+  background: #c63509;
+}
+.cf-flame:last-child {
+  background: #c63509;
+}
+.cf-flame {
+  background: #cd4015;
+  width: 100px;
+  height: 100px;
+  border-radius: 1em;
+  position: absolute;
+  bottom: 0px;
+  left: 100px;
+}
+
+#fireNodes2 .cf-flame {
+  -webkit-animation: flameColor 1.5s ease-out infinite;
+          animation: flameColor 1.5s ease-out infinite;
+}
+
+@-webkit-keyframes flameColor {
+  0% {
+    background: #c63509;
+  }
+  20% {
+    background: #cd4015;
+  }
+  30% {
+    background: #fdac01;
+  }
+  50% {
+    background: #ffb401;
+  }
+  60% {
+    background: #fdac01;
+  }
+  70% {
+    background: #ffdc01;
+  }
+  80% {
+    background: #fde239;
+  }
+  100% {
+    background: #f5ed8f;
+  }
+}
+
+@keyframes flameColor {
+  0% {
+    background: #c63509;
+  }
+  20% {
+    background: #cd4015;
+  }
+  30% {
+    background: #fdac01;
+  }
+  50% {
+    background: #ffb401;
+  }
+  60% {
+    background: #fdac01;
+  }
+  70% {
+    background: #ffdc01;
+  }
+  80% {
+    background: #fde239;
+  }
+  100% {
+    background: #f5ed8f;
+  }
+}
